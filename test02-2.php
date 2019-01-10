@@ -7,7 +7,7 @@
 <div>
 <?PHP
     $message = $_POST["message"];
-    $command="test02.py " . $message;
+    $command="python test02.py " . $message;
     exec($command, $output);
     print "$output[0]\n";
     print "$output[1]\n";
